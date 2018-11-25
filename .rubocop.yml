@@ -1,0 +1,60 @@
+# ver: 0.8.0
+
+inherit_from:
+  - .rubocop_todo.yml
+AllCops:
+  TargetRubyVersion: ~
+  TargetRailsVersion: 5.2
+  Exclude:
+    - 'bin/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'db/fixtures/*'
+    - 'Rakefile'
+    - 'vendor/**/*'
+    - 'config/routes.rb'
+    - 'node_modules/**/*'
+  DisplayCopNames: true
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'lib/tasks/*'
+Rails:
+  Enabled: true
+Metrics/LineLength:
+  Max: 160
+Metrics/MethodLength:
+  Max: 30
+Metrics/AbcSize:
+  Max: 30
+Style/StringLiterals:
+  Enabled: false
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+Layout/AlignParameters:
+  EnforcedStyle: with_first_parameter
+Style/Documentation:
+  Enabled: false
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+Layout/SpaceBeforeComma:
+  Enabled: false
+Layout/SpaceBeforeFirstArg:
+ Enabled: false
+Layout/SpaceAroundOperators:
+  Enabled: true
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+Layout/ExtraSpacing:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/AsciiComments:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/BlockComments:
+  Enabled: false
