@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start_hour: 1
+  start_minute: 1
+  daily_plan: one
+
+two:
+  start_hour: 1
+  start_minute: 1
+  daily_plan: two
